@@ -1,0 +1,14 @@
+[package]
+name = "docker-foreground-container"
+version = "0.1.0"
+authors = ["Brandon Hamilton <brandon.hamilton@gmail.com>"]
+description = "A foreground process that starts an existing docker container when run, and stops it when terminated"
+edition = "2021"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/brandonhamilton/docker-foreground-container/"
+
+[dependencies]
+anyhow = "1"
+signal-hook = { version = "0.3", feautues = ["iterator", "extended-siginfo"]}
+time = { version = "0.3", features = ["formatting"] }
